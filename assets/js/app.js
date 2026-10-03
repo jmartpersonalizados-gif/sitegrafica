@@ -1,5 +1,5 @@
 /* =========================================================================
-   JM ARTS — app.js
+   JM PERSONALIZADOS — app.js
    Renderização, pedido guiado, calculadora, motion
    ========================================================================= */
 (function () {
@@ -136,7 +136,7 @@
      4. RENDER — FOOTER / CONTATO
      --------------------------------------------------------------------- */
   function renderContato() {
-    $('#fWhats').href = WA('Olá! Vim pelo site da JM Arts.');
+    $('#fWhats').href = WA('Olá! Vim pelo site da JM PERSONALIZADOS.');
     $('#fWhats').textContent = C.whatsappExibicao;
     $('#fInsta').href = C.instagramUrl;
     $('#fInsta').textContent = '@' + C.instagram;
@@ -150,7 +150,7 @@
         <span>${d.dia}</span><span>${d.hora}</span>
       </span>`).join('');
 
-    const wa = WA('Olá! Vim pelo site da JM Arts.');
+    const wa = WA('Olá! Vim pelo site da JM PERSONALIZADOS.');
     $('#waFloat').href = wa;
     $('#waBar').href = wa;
   }

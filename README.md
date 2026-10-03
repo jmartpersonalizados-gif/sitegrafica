@@ -1,6 +1,6 @@
-# JM Arts — Site Institucional
+# JM PERSONALIZADOS — Site Institucional
 
-Site institucional da gráfica **JM Arts** com catálogo de produtos, orçamento rápido e
+Site institucional da gráfica **JM PERSONALIZADOS** com catálogo de produtos, orçamento rápido e
 **pedido guiado pelo WhatsApp** (o cliente monta o pedido em 8 passos e a mensagem já chega
 formatada na conversa — nada de digitar à mão).
 
@@ -28,7 +28,7 @@ Tudo que muda com frequência está em **`assets/js/data.js`**, comentado em por
 | `produtos`   | nome, descrição, preço base, unidade, formatação, acabamentos |
 | `servicos`   | blocos da seção "Serviços"                                  |
 | `passos`     | "Como funciona"                                             |
-| `diferenciais` | "Por que a JM Arts" (cor de fundo e cor do texto)          |
+| `diferenciais` | "Por que a JM PERSONALIZADOS" (cor de fundo e cor do texto)          |
 | `portfolio`  | itens do portfólio                                          |
 
 ### Como o preço é calculado

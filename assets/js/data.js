@@ -1,5 +1,5 @@
 /* =========================================================================
-   JM ARTS — ARQUIVO DE DADOS
+   JM PERSONALIZADOS — ARQUIVO DE DADOS
    ---------------------------------------------------------------------------
    Edite APENAS este arquivo para alterar:
    → contato / WhatsApp / Instagram / endereço / horários
@@ -14,8 +14,8 @@ window.JM = {
      1. IDENTIDADE / CONTATO
      --------------------------------------------------------------------- */
   config: {
-    nome: "JM Arts",
-    nomeCompleto: "JM Arts — Gráfica Criativa",
+    nome: "JM PERSONALIZADOS",
+    nomeCompleto: "JM PERSONALIZADOS — Gráfica Criativa",
     tagline: "Impressão, papelaria e materiais personalizados",
 
     // Só o número, com DDI. Formato: 55 + DDD + número
@@ -29,7 +29,7 @@ window.JM = {
     endereco: "Rua Principal, 123 — Centro, Pernambuco/PE",
     mapsUrl: "",
 
-    email: "contato@jmarts.com.br",
+    email: "contato@jmpersonalizados.com.br",
 
     horarioResumo: "Seg a Qui 07h–21h · Sex 07h–17h · Sáb 08h–13h",
     horarios: [

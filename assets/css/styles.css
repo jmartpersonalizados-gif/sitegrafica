@@ -1,5 +1,5 @@
 /* =========================================================================
-   JM ARTS — styles.css
+   JM PERSONALIZADOS — styles.css
    Editorial · assimétrico · colorido · minimalista
    ========================================================================= */
 
@@ -171,17 +171,22 @@ ul,ol{list-style:none}
   min-height:48px;
 }
 
+/* ---------- LOGO ---------- */
+.svg-defs{position:absolute;width:0;height:0;overflow:hidden;pointer-events:none}
 .logo{display:flex;align-items:center;gap:11px;flex:none}
 .logo__mark{width:44px;height:44px;transition:transform .5s var(--e)}
 .logo:hover .logo__mark{transform:rotate(-14deg)}
-.logo__script{font-family:'Great Vibes',cursive;font-weight:400}
+.logo__disc{fill:#8B8B87}
+.logo__script{font-family:'Great Vibes',cursive;font-weight:400;fill:#14213D}
+.logo__tail{fill:none;stroke:#14213D}
 .logo__word{
-  font-family:var(--font-titulo);font-weight:600;
-  font-size:1.16rem;letter-spacing:-.02em;color:var(--tinta);
+  font-family:var(--font-titulo);font-weight:500;
+  font-size:clamp(.86rem,2.4vw,1.14rem);letter-spacing:-.01em;
+  color:var(--escuro);white-space:nowrap;
 }
-.logo__word b{font-weight:800;color:var(--azul)}
+.logo__word b{font-weight:800}
 .logo--light .logo__word{color:#fff}
-.logo--light .logo__word b{color:var(--amarelo-txt)}
+.logo--light .logo__disc{fill:#FBFCFC}
 
 .nav{display:none;gap:4px;margin-left:auto}
 .nav a{
