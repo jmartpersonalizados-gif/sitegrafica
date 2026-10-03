@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 380" width="520" height="380" role="img" aria-label="Mockup de flyer impresso">
+  <defs>
+    <filter id="fs" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#0A2E3D" flood-opacity=".30"/>
+    </filter>
+  </defs>
+  <g filter="url(#fs)">
+    <g transform="rotate(-7 250 195)">
+      <rect x="104" y="70" width="250" height="340" rx="8" fill="#08ABAC" opacity=".9" transform="rotate(9 229 240)"/>
+      <rect x="136" y="52" width="250" height="340" rx="8" fill="#FBFCFC"/>
+      <rect x="136" y="52" width="250" height="132" rx="8" fill="#F06B52"/>
+      <rect x="136" y="164" width="250" height="20" fill="#F06B52"/>
+      <circle cx="336" cy="96" r="34" fill="#EEAF5A"/>
+      <rect x="164" y="94" width="112" height="18" rx="9" fill="#FBFCFC"/>
+      <rect x="164" y="122" width="76" height="18" rx="9" fill="#FBFCFC"/>
+      <rect x="164" y="212" width="194" height="13" rx="6.5" fill="#143B4A"/>
+      <rect x="164" y="236" width="150" height="13" rx="6.5" fill="#143B4A"/>
+      <rect x="164" y="272" width="194" height="8" rx="4" fill="#C3D0D6"/>
+      <rect x="164" y="288" width="194" height="8" rx="4" fill="#C3D0D6"/>
+      <rect x="164" y="304" width="140" height="8" rx="4" fill="#C3D0D6"/>
+      <rect x="164" y="334" width="98" height="30" rx="8" fill="#0A5781"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+  <circle cx="150" cy="150" r="116" fill="#8C9296"/>
+  <g fill="none" stroke-width="18">
+    <path d="M160.9 25.5 A125 125 0 0 1 274.5 139.1" stroke="#F5901F"/>
+    <path d="M274.5 160.9 A125 125 0 0 1 160.9 274.5" stroke="#D6245B"/>
+    <path d="M139.1 274.5 A125 125 0 0 1 25.5 160.9" stroke="#79BE43"/>
+    <path d="M25.5 139.1 A125 125 0 0 1 139.1 25.5" stroke="#2AA3DC"/>
+  </g>
+  <text x="150" y="176" text-anchor="middle" font-size="120" font-weight="800"
+        font-family="Arial, Helvetica, sans-serif" fill="#14213D" letter-spacing="-6">JM</text>
+</svg>
