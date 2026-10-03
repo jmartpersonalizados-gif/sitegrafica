@@ -56,7 +56,7 @@
       <article class="pcard" data-reveal style="--pc:${p.cor};--rd:${i * 70}ms">
         <div class="pcard__media">
           <span class="pcard__tag">${esc(p.nome)}</span>
-          <img src="${p.img}" alt="${esc(p.nome)} — ${esc(p.desc)}" loading="lazy" width="800" height="550">
+          <img src="${p.img}" alt="${esc(p.nome)} — ${esc(p.desc)}" loading="lazy" decoding="async" width="1400" height="962">
         </div>
         <div class="pcard__body">
           <h3 class="pcard__title">${esc(p.nome)}</h3>

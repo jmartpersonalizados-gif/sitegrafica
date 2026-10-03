@@ -14,7 +14,7 @@ index.html            → página única (todas as seções)
 assets/css/styles.css → todo o estilo + variáveis de tema
 assets/js/data.js     → 👈 ARQUIVO DE EDIÇÃO (produtos, preços, textos, contatos)
 assets/js/app.js      → renderização, cálculo de preços, pedido guiado, animações
-assets/img/           → mockups (SVG), favicon e logo
+assets/img/           → fotos dos produtos (JPG), mockups do portfólio (SVG), favicon
 robots.txt            → regras para robôs de busca
 ```
 
@@ -30,6 +30,30 @@ Tudo que muda com frequência está em **`assets/js/data.js`**, comentado em por
 | `passos`     | "Como funciona"                                             |
 | `diferenciais` | "Por que a JM PERSONALIZADOS" (cor de fundo e cor do texto)          |
 | `portfolio`  | itens do portfólio                                          |
+
+### Imagens dos produtos
+
+A seção **Produtos** usa fotografias reais (1400×962, ~800 KB no total), salvas em
+`assets/img/` com o padrão `prod-<nome>.jpg`:
+
+| Produto     | Arquivo                    |
+|-------------|----------------------------|
+| Cartões     | `assets/img/prod-cartoes.jpg`     |
+| Adesivos    | `assets/img/prod-adesivos.jpg`    |
+| Flyers      | `assets/img/prod-flyers.jpg`      |
+| Banners     | `assets/img/prod-banners.jpg`     |
+| Papelaria   | `assets/img/prod-papelaria.jpg`   |
+| Embalagens  | `assets/img/prod-embalagens.jpg`  |
+
+Para trocar uma foto: substitua o arquivo mantendo o mesmo nome (ou ajuste o campo `img`
+do produto em `assets/js/data.js`). Mantenha a proporção **16:11** — é o recorte que o
+card aplica (`object-fit: cover`).
+
+> 📸 **Origem:** imagens do [Pexels](https://www.pexels.com) sob licença Pexels
+> (uso comercial gratuito, sem obrigação de crédito). Se tiver fotos dos **seus**
+> trabalhos, substitua — fotos próprias convertem muito mais.
+
+O **portfólio** continua com mockups em SVG (`assets/img/*.svg`).
 
 ### Como o preço é calculado
 
