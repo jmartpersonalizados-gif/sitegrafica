@@ -91,7 +91,7 @@
     const el = $('#steps');
     if (!el) return;
     el.innerHTML = D.passos.map((s, i) => `
-      <li class="step" data-reveal style="--sc:${s.cor};--rd:${i * 90}ms">
+      <li class="step" data-reveal style="--sc:${s.cor};--sc-txt:${s.corTxt || s.cor};--rd:${i * 90}ms">
         <span class="step__n">${s.n}</span>
         <h3>${esc(s.titulo)}</h3>
         <p>${esc(s.texto)}</p>
@@ -103,7 +103,7 @@
     if (!el) return;
     el.innerHTML = D.diferenciais.map((d, i) => `
       <article class="diff" data-reveal
-        style="--dc:${d.cor};--df:${d.claro ? '#143B4A' : '#fff'};--rd:${i * 80}ms">
+        style="--dc:${d.cor};--df:${d.corTxt || (d.claro ? '#143B4A' : '#fff')};--rd:${i * 80}ms">
         <span class="diff__n">0${i + 1}</span>
         <h3>${esc(d.titulo)}</h3>
         <p>${esc(d.texto)}</p>

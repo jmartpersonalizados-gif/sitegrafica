@@ -227,10 +227,10 @@ window.JM = {
      4. COMO FUNCIONA
      --------------------------------------------------------------------- */
   passos: [
-    { n: "01", titulo: "Escolha",   texto: "Escolha o produto que você precisa.",           cor: "#0A5781" },
-    { n: "02", titulo: "Personalize", texto: "Defina formato, quantidade e acabamento.",     cor: "#08ABAC" },
-    { n: "03", titulo: "Envie",     texto: "Envie sua arte diretamente pelo site.",         cor: "#F06B52" },
-    { n: "04", titulo: "Receba",    texto: "Acompanhe seu pedido e receba o material.",      cor: "#EEAF5A" }
+    { n: "01", titulo: "Escolha",   texto: "Escolha o produto que você precisa.",           cor: "#0A5781", corTxt: "#0A5781" },
+    { n: "02", titulo: "Personalize", texto: "Defina formato, quantidade e acabamento.",     cor: "#08ABAC", corTxt: "#04767A" },
+    { n: "03", titulo: "Envie",     texto: "Envie sua arte diretamente pelo site.",         cor: "#F06B52", corTxt: "#C7452F" },
+    { n: "04", titulo: "Receba",    texto: "Acompanhe seu pedido e receba o material.",      cor: "#EEAF5A", corTxt: "#B07D1E" }
   ],
 
   /* ---------------------------------------------------------------------
@@ -267,10 +267,10 @@ window.JM = {
      6. DIFERENCIAIS
      --------------------------------------------------------------------- */
   diferenciais: [
-    { titulo: "Qualidade",         texto: "Materiais e acabamentos selecionados.",        cor: "#0A5781", claro: false },
-    { titulo: "Agilidade",         texto: "Processo simples e acompanhamento do pedido.", cor: "#08ABAC", claro: false },
-    { titulo: "Personalização",    texto: "Seu projeto do jeito que você imaginou.",      cor: "#F06B52", claro: false },
-    { titulo: "Atendimento humano", texto: "Do orçamento à entrega, sempre com gente falando com você.", cor: "#EEAF5A", claro: true }
+    { titulo: "Qualidade",         texto: "Materiais e acabamentos selecionados.",        cor: "#0A5781", corTxt: "#FFFFFF" },
+    { titulo: "Agilidade",         texto: "Processo simples e acompanhamento do pedido.", cor: "#08ABAC", corTxt: "#0A2A33" },
+    { titulo: "Personalização",    texto: "Seu projeto do jeito que você imaginou.",      cor: "#F06B52", corTxt: "#0A2A33" },
+    { titulo: "Atendimento humano", texto: "Do orçamento à entrega, sempre com gente falando com você.", cor: "#EEAF5A", corTxt: "#143B4A" }
   ],
 
   /* ---------------------------------------------------------------------

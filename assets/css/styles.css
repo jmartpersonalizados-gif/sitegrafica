@@ -14,8 +14,16 @@
 
   --tinta:#143B4A;
   --tinta-2:#4A6C7B;
-  --tinta-3:#7E9AA8;
+  --tinta-3:#56737F;
   --linha:#E1E9ED;
+
+  /* Variantes de texto — garantem contraste AA (4.5:1) sobre os fundos.
+     As cores da marca acima continuam sendo usadas em preenchimentos. */
+  --turquesa-txt:#04767A;   /* sobre off-white  -> 5.3:1 */
+  --coral-txt:#C7452F;      /* sobre off-white  -> 4.7:1 */
+  --amarelo-txt:#F5C070;    /* sobre azul       -> 4.7:1 */
+  --coral-fundo:#C7452F;    /* fundo com texto branco -> 4.9:1 */
+  --escuro-txt:#0A2A33;     /* sobre turquesa/coral -> >= 4.9:1 */
 
   --font-titulo:'Sora',system-ui,sans-serif;
   --font-corpo:'Inter',system-ui,sans-serif;
@@ -74,15 +82,15 @@ ul,ol{list-style:none}
   font-family:var(--font-titulo);
   font-size:.78rem;font-weight:700;
   letter-spacing:.22em;text-transform:uppercase;
-  color:var(--turquesa);
+  color:var(--turquesa-txt);
   display:flex;align-items:center;gap:10px;
   margin-bottom:18px;
 }
 .eyebrow::before{
   content:"";width:26px;height:2px;background:currentColor;flex:none;
 }
-.eyebrow--light{color:var(--amarelo)}
-.eyebrow span{opacity:.5}
+.eyebrow--light{color:var(--amarelo-txt)}
+.eyebrow span{opacity:1}
 
 .section{padding:var(--pad-sec) 0;position:relative}
 .section--tint{background:#F2F7F8}
@@ -134,7 +142,7 @@ ul,ol{list-style:none}
 .btn--light{--bg:#fff;--fg:var(--azul);--bd:#fff}
 .btn--light:hover{--bg:var(--amarelo);--bd:var(--amarelo);--fg:var(--escuro)}
 
-.btn--coral{--bg:var(--coral);--fg:#fff;--bd:var(--coral)}
+.btn--coral{--bg:var(--coral-fundo);--fg:#fff;--bd:var(--coral-fundo)}
 .btn--coral:hover{--bg:#fff;--fg:var(--escuro);--bd:#fff}
 
 .btn--sm{padding:12px 20px;font-size:.88rem}
@@ -173,7 +181,7 @@ ul,ol{list-style:none}
 }
 .logo__word b{font-weight:800;color:var(--azul)}
 .logo--light .logo__word{color:#fff}
-.logo--light .logo__word b{color:var(--amarelo)}
+.logo--light .logo__word b{color:var(--amarelo-txt)}
 
 .nav{display:none;gap:4px;margin-left:auto}
 .nav a{
@@ -324,8 +332,7 @@ ul,ol{list-style:none}
 .glyph svg{width:100%;height:100%;fill:currentColor;stroke:none}
 .glyph--star{top:14%;left:47%;width:22px;color:var(--coral);opacity:.9;animation:spin 22s linear infinite}
 .glyph--plus{
-  top:76%;left:52%;font-size:34px;font-weight:300;color:var(--amarelo);
-  font-family:var(--font-titulo);line-height:1;
+  top:76%;left:52%;width:34px;height:34px;color:var(--amarelo-txt);opacity:.9;
 }
 .glyph--ring{
   top:26%;left:6%;width:44px;height:44px;border:2px solid var(--turquesa);
@@ -451,16 +458,16 @@ ul,ol{list-style:none}
 .sitem__n{
   font-family:var(--font-titulo);font-weight:800;
   font-size:clamp(2.6rem,4vw,3.6rem);letter-spacing:-.05em;
-  color:transparent;-webkit-text-stroke:1.5px rgba(255,255,255,.34);
+  color:rgba(255,255,255,.72);
   line-height:1;display:block;margin-bottom:20px;
-  transition:color .45s var(--e),-webkit-text-stroke-color .45s var(--e);
+  transition:color .45s var(--e);
 }
-.sitem:hover .sitem__n{color:var(--sc);-webkit-text-stroke-color:transparent}
+.sitem:hover .sitem__n{color:#fff}
 .sitem h3{
   font-family:var(--font-titulo);font-weight:700;
   font-size:clamp(1.3rem,2vw,1.6rem);letter-spacing:-.02em;margin-bottom:12px;
 }
-.sitem p{color:rgba(255,255,255,.74);font-size:.98rem;max-width:38ch}
+.sitem p{color:rgba(255,255,255,.8);font-size:.98rem;max-width:38ch}
 
 /* --------------------------- 9. COMO FUNCIONA -------------------------- */
 .steps{display:grid;gap:clamp(24px,3vw,30px);counter-reset:s}
@@ -471,7 +478,7 @@ ul,ol{list-style:none}
 .step__n{
   font-family:var(--font-titulo);font-weight:800;
   font-size:clamp(3.4rem,6vw,5rem);line-height:.9;letter-spacing:-.06em;
-  color:var(--sc);display:block;margin-bottom:16px;
+  color:var(--sc-txt,var(--sc));display:block;margin-bottom:16px;
 }
 .step h3{
   font-family:var(--font-titulo);font-weight:700;
@@ -520,7 +527,7 @@ ul,ol{list-style:none}
 .chat__bubble p b{font-weight:600;color:var(--escuro)}
 .chat__rule{height:1px;background:rgba(20,59,74,.12)!important;margin:14px 0!important}
 .chat__time{
-  display:block;text-align:right;font-size:.72rem;color:#5C7B87;margin-top:12px;
+  display:block;text-align:right;font-size:.72rem;color:#3A5763;margin-top:12px;
 }
 .chat__bubble::after{
   content:"";position:absolute;left:20px;bottom:-9px;
@@ -646,14 +653,14 @@ ul,ol{list-style:none}
 .diff:hover::after{transform:scale(1.35)}
 .diff__n{
   font-family:var(--font-titulo);font-weight:800;font-size:.8rem;
-  letter-spacing:.2em;opacity:.5;margin-bottom:auto;
+  letter-spacing:.2em;opacity:1;margin-bottom:auto;
 }
 .diff h3{
   font-family:var(--font-titulo);font-weight:700;
   font-size:clamp(1.35rem,2vw,1.6rem);letter-spacing:-.02em;
   margin:34px 0 10px;
 }
-.diff p{font-size:.97rem;opacity:.86;line-height:1.55}
+.diff p{font-size:.97rem;opacity:1;line-height:1.55}
 
 /* ----------------------------- 14. SOBRE ------------------------------- */
 .about{display:grid;gap:clamp(44px,5vw,64px);align-items:center}
@@ -673,7 +680,7 @@ ul,ol{list-style:none}
   font-size:clamp(1.9rem,3.4vw,2.5rem);letter-spacing:-.04em;
   color:var(--amarelo);line-height:1;
 }
-.nums span{font-size:.85rem;color:rgba(255,255,255,.6)}
+.nums span{font-size:.85rem;color:rgba(255,255,255,.78)}
 
 .about__art{position:relative;aspect-ratio:1/1;max-width:520px;width:100%;margin-inline:auto}
 .about__card{
@@ -691,7 +698,7 @@ ul,ol{list-style:none}
   animation:float 6.5s ease-in-out infinite;
 }
 .about__chip--a{top:0;right:8%;background:var(--coral);color:#fff;animation-delay:-.8s}
-.about__chip--b{bottom:12%;left:4%;background:var(--turquesa);color:#fff;animation-delay:-3s}
+.about__chip--b{bottom:12%;left:4%;background:var(--turquesa);color:var(--escuro-txt);animation-delay:-3s}
 .about__chip--c{top:44%;right:-2%;background:var(--amarelo);color:var(--escuro);animation-delay:-5s;font-size:2rem;font-weight:400}
 
 /* ------------------------------ 15. CTA -------------------------------- */
@@ -741,26 +748,26 @@ ul,ol{list-style:none}
 .footer__col{display:flex;flex-direction:column;gap:11px}
 .footer__col h3{
   font-family:var(--font-titulo);font-size:.74rem;font-weight:700;
-  letter-spacing:.19em;text-transform:uppercase;color:var(--amarelo);
+  letter-spacing:.19em;text-transform:uppercase;color:var(--amarelo-txt);
   margin-bottom:6px;
 }
 .footer__col a,.footer__col span{
-  color:rgba(255,255,255,.76);font-size:.94rem;
+  color:rgba(255,255,255,.82);font-size:.94rem;
   transition:color .3s var(--e),transform .3s var(--e);
 }
 .footer__col a:hover{color:#fff;transform:translateX(4px)}
-.footer__muted{color:rgba(255,255,255,.5)!important}
+.footer__muted{color:rgba(255,255,255,.78)!important}
 .footer__row{display:flex;justify-content:space-between;gap:14px;font-size:.9rem}
-.footer__row span:first-child{color:rgba(255,255,255,.76)}
+.footer__row span:first-child{color:rgba(255,255,255,.82)}
 .footer__row span:last-child{color:#fff;font-family:var(--font-titulo);font-weight:600}
-.footer__row.is-off span:last-child{color:var(--coral)}
+.footer__row.is-off span:last-child{color:var(--coral-claro,#FFB8A8)}
 
 .footer__bottom{
   display:flex;flex-wrap:wrap;gap:12px;
   justify-content:space-between;align-items:center;
   padding:26px 0 34px;
   border-top:1px solid rgba(255,255,255,.18);
-  font-size:.86rem;color:rgba(255,255,255,.6);
+  font-size:.86rem;color:rgba(255,255,255,.8);
 }
 
 /* ----------------------- 17. WHATSAPP FLUTUANTE ------------------------ */
@@ -777,7 +784,7 @@ ul,ol{list-style:none}
              background .35s var(--e),color .35s var(--e);
 }
 .wa.is-in{transform:translateY(0);opacity:1}
-.wa:hover{background:var(--turquesa);color:var(--escuro)}
+.wa:hover{background:var(--turquesa);color:var(--escuro-txt)}
 .wa svg{width:19px;height:19px;fill:currentColor;flex:none}
 .wa i{font-style:normal;transition:transform .35s var(--e)}
 .wa:hover i{transform:translate(3px,-3px)}
@@ -906,7 +913,7 @@ ul,ol{list-style:none}
 .wopts--stack .opt{border-radius:var(--r);text-align:left}
 .opt:hover{border-color:var(--turquesa);color:var(--azul);transform:translateY(-2px)}
 .opt.is-on{background:var(--azul);border-color:var(--azul);color:#fff}
-.wopts--multi .opt.is-on{background:var(--turquesa);border-color:var(--turquesa);color:var(--escuro)}
+.wopts--multi .opt.is-on{background:var(--turquesa);border-color:var(--turquesa);color:var(--escuro-txt)}
 .wextra{margin-top:16px}
 .wextra input{
   width:100%;padding:15px 16px;background:#fff;
@@ -983,12 +990,12 @@ ul,ol{list-style:none}
 .wiz__foot .btn[disabled]{opacity:.4;pointer-events:none}
 
 /* -------------------------- 20. REVEAL --------------------------------- */
-[data-reveal]{
+.js [data-reveal]{
   opacity:0;transform:translate3d(0,26px,0);
   transition:opacity .8s var(--e),transform .8s var(--e);
   transition-delay:var(--rd,0ms);
 }
-[data-reveal].is-in{opacity:1;transform:none}
+.js [data-reveal].is-in{opacity:1;transform:none}
 
 /* ------------------------ 21. REDUCED MOTION --------------------------- */
 @media (prefers-reduced-motion: reduce){
@@ -998,7 +1005,7 @@ ul,ol{list-style:none}
     transition-duration:.001ms!important;
     scroll-behavior:auto!important;
   }
-  [data-reveal]{opacity:1!important;transform:none!important}
+  .js [data-reveal]{opacity:1!important;transform:none!important}
   .hero__title em::after{transform:scaleX(1)}
   .wa{transform:none;opacity:1}
 }
