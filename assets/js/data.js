@@ -292,7 +292,7 @@ window.JM = {
      --------------------------------------------------------------------- */
   numeros: [
     { valor: "2+",   label: "anos de gráfica" },
-    { valor: "4.2k", label: "pedidos entregues" },
+    { valor: "2,5k", label: "pedidos entregues" },
     { valor: "98%",  label: "clientes que voltam" },
     { valor: "24h",  label: "orçamento no WhatsApp" }
   ]
