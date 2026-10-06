@@ -31,10 +31,17 @@ Tudo que muda com frequência está em **`assets/js/data.js`**, comentado em por
 | `diferenciais` | "Por que a JM PERSONALIZADOS" (cor de fundo e cor do texto)          |
 | `portfolio`  | itens do portfólio                                          |
 
-### Imagens dos produtos
+### Imagens do catálogo
 
-A seção **Produtos** usa fotografias reais (1400×962, ~800 KB no total), salvas em
-`assets/img/` com o padrão `prod-<nome>.jpg`:
+Todo o catálogo usa **fotografia real de produto**, salva em `assets/img/`:
+
+| Contexto                        | Arquivos                      | Proporção                          |
+|---------------------------------|-------------------------------|------------------------------------|
+| Seção **Produtos** (6)          | `prod-<nome>.jpg`             | 16:11 — 1400×962                   |
+| **Hero**, **Serviços** e **Sobre** (6) | `photo-<nome>.jpg`      | 16:11 — 900×620                    |
+| **Portfólio** (8)               | `pf1-identidade.jpg` … `pf8-cartoes.jpg` | igual ao `ratio` do card |
+
+Produtos:
 
 | Produto     | Arquivo                    |
 |-------------|----------------------------|
@@ -46,14 +53,13 @@ A seção **Produtos** usa fotografias reais (1400×962, ~800 KB no total), salv
 | Embalagens  | `assets/img/prod-embalagens.jpg`  |
 
 Para trocar uma foto: substitua o arquivo mantendo o mesmo nome (ou ajuste o campo `img`
-do produto em `assets/js/data.js`). Mantenha a proporção **16:11** — é o recorte que o
-card aplica (`object-fit: cover`).
+no produto ou no item do portfólio, em `assets/js/data.js`). Mantenha a proporção indicada
+acima — as imagens usam `object-fit: cover`, então recortes diferentes são aceitos sem
+distorção.
 
 > 📸 **Origem:** imagens do [Pexels](https://www.pexels.com) sob licença Pexels
 > (uso comercial gratuito, sem obrigação de crédito). Se tiver fotos dos **seus**
 > trabalhos, substitua — fotos próprias convertem muito mais.
-
-O **portfólio** continua com mockups em SVG (`assets/img/*.svg`).
 
 ### Como o preço é calculado
 

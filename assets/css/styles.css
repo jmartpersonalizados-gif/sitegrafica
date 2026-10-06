@@ -612,7 +612,7 @@ ul,ol{list-style:none}
   cursor:pointer;
 }
 .folio__img{
-  display:block;width:100%;
+  display:block;width:100%;height:auto;object-fit:cover;
   transition:transform .9s var(--e),opacity .5s var(--e);
   opacity:.94;
 }

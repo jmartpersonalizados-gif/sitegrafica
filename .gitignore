@@ -1,5 +1,8 @@
 # páginas auxiliares de revisão (não fazem parte do site)
 _fotos-preview.html
+_cand/
+_cand2/
+_mock/
 
 # sistema
 .DS_Store

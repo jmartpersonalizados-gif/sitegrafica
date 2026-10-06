@@ -277,14 +277,14 @@ window.JM = {
      7. PORTFÓLIO
      --------------------------------------------------------------------- */
   portfolio: [
-    { titulo: "Café Serra Alta",  cat: "Identidade visual",      img: "assets/img/cartoes.svg",    cor: "#0A5781", ratio: "4 / 5"  },
-    { titulo: "Ateliê Nordeste",  cat: "Embalagens",             img: "assets/img/embalagem.svg",  cor: "#EEAF5A", ratio: "4 / 3"  },
-    { titulo: "Grupo Vertta",     cat: "Papelaria corporativa",  img: "assets/img/papelaria.svg",  cor: "#08ABAC", ratio: "1 / 1"  },
-    { titulo: "Linha Organic",    cat: "Adesivos",               img: "assets/img/adesivos.svg",   cor: "#F06B52", ratio: "4 / 3"  },
-    { titulo: "Feira Viva",       cat: "Materiais promocionais", img: "assets/img/flyer.svg",      cor: "#143B4A", ratio: "3 / 4"  },
-    { titulo: "Studio Lume",      cat: "Comunicação visual",     img: "assets/img/banner.svg",     cor: "#08ABAC", ratio: "4 / 5"  },
-    { titulo: "Doces da Vó",      cat: "Embalagens",             img: "assets/img/embalagem.svg",  cor: "#0A5781", ratio: "1 / 1"  },
-    { titulo: "Lume Barbearia",   cat: "Cartões",                img: "assets/img/cartoes.svg",    cor: "#F06B52", ratio: "4 / 3"  }
+    { titulo: "Café Serra Alta",  cat: "Identidade visual",      img: "assets/img/pf1-identidade.jpg",   cor: "#0A5781", ratio: "4 / 5"  },
+    { titulo: "Ateliê Nordeste",  cat: "Embalagens",             img: "assets/img/pf2-embalagens.jpg",   cor: "#EEAF5A", ratio: "4 / 3"  },
+    { titulo: "Grupo Vertta",     cat: "Papelaria corporativa",  img: "assets/img/pf3-papelaria.jpg",    cor: "#08ABAC", ratio: "1 / 1"  },
+    { titulo: "Linha Organic",    cat: "Adesivos",               img: "assets/img/pf4-adesivos.jpg",     cor: "#F06B52", ratio: "4 / 3"  },
+    { titulo: "Feira Viva",       cat: "Materiais promocionais", img: "assets/img/pf5-promocionais.jpg", cor: "#143B4A", ratio: "3 / 4"  },
+    { titulo: "Studio Lume",      cat: "Comunicação visual",     img: "assets/img/pf6-comunicacao.jpg",  cor: "#08ABAC", ratio: "4 / 5"  },
+    { titulo: "Doces da Vó",      cat: "Embalagens",             img: "assets/img/pf7-doces.jpg",        cor: "#0A5781", ratio: "1 / 1"  },
+    { titulo: "Lume Barbearia",   cat: "Cartões",                img: "assets/img/pf8-cartoes.jpg",      cor: "#F06B52", ratio: "4 / 3"  }
   ],
 
   /* ---------------------------------------------------------------------
